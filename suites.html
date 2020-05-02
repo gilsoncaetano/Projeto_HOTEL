@@ -43,11 +43,124 @@
       <img src="img/painel1.jpg" alt="Areá de lazer do hotel" class="painel" />
     </header>
 
-    <main></main>
+    <main>
+      <h2>Suites</h2>
+      <hr />
+      <p>
+        <span
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+          laborum, officiis aliquid error sit, quo rem sed illum veritatis
+          aspernatur excepturi pariatur beatae unde nam consectetur ipsum
+          nesciunt soluta vitae.</span
+        >
+        <span
+          >Accusamus expedita recusandae sed quia inventore, modi unde
+          voluptate, quas repellendus quae, libero molestiae enim ex? Nesciunt
+          modi non delectus repudiandae recusandae, est et eaque ad voluptatibus
+          cum quam eligendi?</span
+        >
+        <span
+          >Impedit at molestiae, doloribus labore explicabo fugiat sunt tempora
+          cumque nostrum, illo sint ipsa commodi. Qui, alias, minima dignissimos
+          quos aspernatur dolores pariatur in, soluta modi quis ratione nemo
+          quam.</span
+        >
+      </p>
+
+      <hr />
+      <!--Inicio dos cards  -->
+      <div class="row">
+        <div class="col s12 m6">
+          <h2 class="header">Suite Master</h2>
+          <div class="card horizontal">
+            <div class="card-image">
+              <img src="img/suite10.jpg" class="modal-trigger" href="#modal1" />
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Autem, sunt dignissimos explicabo tempora consectetur, quidem
+                  magni inventore aspernatur non iste itaque accusantium quo
+                  voluptatem vel facere eum illo? Ut, tempore.
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="reservas.html">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <h2 class="header">Suite Double</h2>
+          <div class="card horizontal">
+            <div class="card-image">
+              <img src="img/suite2.jpg" class="modal-trigger" href="#modal2" />
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Autem, sunt dignissimos explicabo tempora consectetur, quidem
+                  magni inventore aspernatur non iste itaque accusantium quo
+                  voluptatem vel facere eum illo? Ut, tempore.
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="reservas.html">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ########### área dos Modais ##############-->
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Suite Master</h4>
+        <img src="img/suite10.jpg" />
+      </div>
+      <div class="modal-footer">
+        <a
+          href="reservas.html"
+          class="modal-close waves-effect waves-green btn-flat"
+          >Reservar</a
+        >
+      </div>
+    </div>
+
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <h4>Suite Double</h4>
+        <img src="img/suite2.jpg" />
+      </div>
+      <div class="modal-footer">
+        <a
+          href="reservas.html"
+          class="modal-close waves-effect waves-green btn-flat"
+          >Reservar</a
+        >
+      </div>
+    </div>
 
     <footer></footer>
 
+    <!-- Link do jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#modal1").modal();
+        $(document).ready(function () {
+          $("#modal2").modal();
+        });
+      });
+    </script>
   </body>
 </html>
