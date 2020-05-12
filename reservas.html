@@ -27,8 +27,19 @@
       <!-- barra de navegação do site  -->
       <nav>
         <div class="nav-wrapper orange darken-2" style="text-align: left;">
-          <a href="index.html" class="brand-logo left">Grand Hotel</a>
+          <a href="index.html" class="brand-logo">Grand Hotel</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+            <i class="material-icons">menu</i></a
+          >
           <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="hotel.html">Hotel</a></li>
+            <li><a href="suites.html">Suites</a></li>
+            <li><a href="gastronomia.html">Gastronomia</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="localizacao.html">Localização</a></li>
+          </ul>
+
+          <ul class="sidenav" id="mobile-demo">
             <li><a href="hotel.html">Hotel</a></li>
             <li><a href="suites.html">Suites</a></li>
             <li><a href="gastronomia.html">Gastronomia</a></li>
@@ -43,11 +54,199 @@
       <img src="img/painel1.jpg" alt="Areá de lazer do hotel" class="painel" />
     </header>
 
-    <main></main>
+    <main>
+      <h2 class="tema1">Faça sua reserva</h2>
+
+      <hr />
+
+      <!-- inicio da área do formulario -->
+
+      <div class="row">
+        <!-- Inicio do formulario -->
+        <form class="col s12">
+          <!-- Primeira linha do formulario -->
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="nomecompleto" type="text" class="validate" />
+              <label for="nomecompleto">Name Completo</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">email</i>
+              <input id="email" type="email" class="validate" />
+              <label for="email">E-Mail</label>
+            </div>
+            <!-- fim da primeira linha do formulario -->
+          </div>
+
+          <!-- Segunda linha do formulario -->
+          <div class="row">
+            <div class="input-field col s3">
+              <i class="material-icons prefix">call</i>
+              <input id="telefone" type="tel" class="validate" />
+              <label for="telefone">Telefone:</label>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s3">
+                <i class="material-icons prefix">dock</i>
+                <input id="cpf" type="text" class="validate" />
+                <label for="cpf">CPF</label>
+              </div>
+
+              <div class="input-field col s3">
+                <i class="material-icons prefix">date_range</i>
+                <input type="text" class="datepicker" />
+                <label for="datanascimento">Data de Nascimento</label>
+              </div>
+
+              <br />
+              <div id="sexo">
+                <i class="material-icons prefix">people</i>
+                <label id="sex_feminino">
+                  <input name="group1" type="radio" value="F" />
+                  <span>Feminino</span>
+                </label>
+                <label id="sex_masculino">
+                  <input name="group1" type="radio" value="M" />
+                  <span>Masculino</span>
+                </label>
+              </div>
+
+              <!-- fim da Segunda linha do formulario -->
+            </div>
+
+            <hr />
+
+            <!-- Terceira linha do formulario -->
+            <div id="hotel">
+              <div class="input-field col s4">
+                <i class="material-icons prefix">hotel</i>
+                <select class="icons">
+                  <option value="" disabled selected>Escolha sua Suite</option>
+                  <option value="" data-icon="img/suite1.jpg"
+                    >Suite Single</option
+                  >
+                  <option value="" data-icon="img/suite2.jpg"
+                    >Suite Double</option
+                  >
+                  <option value="" data-icon="img/suite4.jpg">Suite Top</option>
+
+                  <option value="" data-icon="img/suite8.jpg"
+                    >Suite Mega</option
+                  >
+                  <option value="" data-icon="img/suite7.jpg"
+                    >Suite Familia Top</option
+                  >
+                  <option value="" data-icon="img/suite3.jpg">Master</option>
+                </select>
+                <label>Selecione a Suite</label>
+              </div>
+
+              <div class="input-field col s4">
+                <i class="material-icons prefix">date_range</i>
+                <input type="text" class="datepicker" />
+                <label for="Check-in">Data de Entrada do Check-in</label>
+              </div>
+
+              <div class="input-field col s4">
+                <i class="material-icons prefix">date_range</i>
+                <input type="text" class="datepicker" />
+                <label for="Check-out">Data de Saida do Check-Out</label>
+              </div>
+
+              <!-- fim da Terceira linha do formulario -->
+            </div>
+
+            <!-- Quarta linha do formulario -->
+            <div id="hotel">
+              <div class="input-field col s4">
+                <i class="material-icons prefix">hotel</i>
+                <select>
+                  <option value="" disabled selected
+                    >Quantidade de Quarto(s)</option
+                  >
+                  <option value="1"> 1</option>
+                  <option value="2"> 2</option>
+                  <option value="3"> 3</option>
+                  <option value="4"> 4</option>
+                  <option value="5"> 5</option>
+                </select>
+                <label>Número de quartos de hóspedes</label>
+              </div>
+            </div>
+
+            <div id="hotel">
+              <div class="input-field col s4">
+                <i class="material-icons prefix">person_add</i>
+                <select>
+                  <option value="" disabled selected>Quantos Adulto(s)</option>
+                  <option value="1"> 1</option>
+                  <option value="2"> 2</option>
+                  <option value="3"> 3</option>
+                  <option value="4"> 4</option>
+                  <option value="5"> 5</option>
+                </select>
+                <label>Adulto(s)</label>
+              </div>
+            </div>
+
+            <div id="hotel">
+              <div class="input-field col s4">
+                <i class="material-icons prefix">person_add</i>
+                <select>
+                  <option value="" disabled selected>Quantas Criança(s)</option>
+                  <option value="1"> 1</option>
+                  <option value="2"> 2</option>
+                  <option value="3"> 3</option>
+                  <option value="4"> 4</option>
+                  <option value="5"> 5</option>
+                </select>
+                <label>Criaça(s)</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- fim da Quarta linha do formulario -->
+
+          <hr />
+
+          <button
+            class="btn waves-effect waves-light"
+            type="submit"
+            name="action"
+          >
+            Submit
+            <i class="material-icons right">check</i>
+          </button>
+
+          <!-- fim do formulário -->
+        </form>
+      </div>
+
+      <!-- fim da área do fomulario -->
+    </main>
 
     <footer></footer>
 
+    <!-- Link do jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".datepicker").datepicker();
+      });
+
+      $(document).ready(function () {
+        $("select").formSelect();
+      });
+
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+      });
+    </script>
   </body>
 </html>

@@ -27,8 +27,19 @@
       <!-- barra de navegação do site  -->
       <nav>
         <div class="nav-wrapper orange darken-2" style="text-align: left;">
-          <a href="index.html" class="brand-logo left">Grand Hotel</a>
+          <a href="index.html" class="brand-logo">Grand Hotel</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+            <i class="material-icons">menu</i></a
+          >
           <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="hotel.html">Hotel</a></li>
+            <li><a href="suites.html">Suites</a></li>
+            <li><a href="gastronomia.html">Gastronomia</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="localizacao.html">Localização</a></li>
+          </ul>
+
+          <ul class="sidenav" id="mobile-demo">
             <li><a href="hotel.html">Hotel</a></li>
             <li><a href="suites.html">Suites</a></li>
             <li><a href="gastronomia.html">Gastronomia</a></li>
@@ -69,6 +80,7 @@
 
       <hr />
       <!--Inicio dos cards  -->
+      <!-- inicio do primeiro bloco -->
       <div class="row">
         <div class="col s12 m6">
           <h2 class="header">Suite Master</h2>
@@ -114,6 +126,105 @@
           </div>
         </div>
       </div>
+      <!-- fim do primeiro bloco -->
+
+      <!-- inicio do segundo bloco -->
+      <div class="row">
+        <div class="col s12 m6">
+          <h2 class="header">Suite Single</h2>
+          <div class="card horizontal">
+            <div class="card-image">
+              <img src="img/suite3.jpg" class="modal-trigger" href="#modal3" />
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Autem, sunt dignissimos explicabo tempora consectetur, quidem
+                  magni inventore aspernatur non iste itaque accusantium quo
+                  voluptatem vel facere eum illo? Ut, tempore.
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="reservas.html">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <h2 class="header">Suite Top</h2>
+          <div class="card horizontal">
+            <div class="card-image">
+              <img src="img/suite4.jpg" class="modal-trigger" href="#modal4" />
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Autem, sunt dignissimos explicabo tempora consectetur, quidem
+                  magni inventore aspernatur non iste itaque accusantium quo
+                  voluptatem vel facere eum illo? Ut, tempore.
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="reservas.html">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- fim do segundo bloco -->
+
+      <!-- inicio do teceiro bloco -->
+      <div class="row">
+        <div class="col s12 m6">
+          <h2 class="header">Suite Mega</h2>
+          <div class="card horizontal">
+            <div class="card-image">
+              <img src="img/suite8.jpg" class="modal-trigger" href="#modal5" />
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Autem, sunt dignissimos explicabo tempora consectetur, quidem
+                  magni inventore aspernatur non iste itaque accusantium quo
+                  voluptatem vel facere eum illo? Ut, tempore.
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="reservas.html">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <h2 class="header">Suite Familia Top</h2>
+          <div class="card horizontal">
+            <div class="card-image">
+              <img src="img/suite7.jpg" class="modal-trigger" href="#modal6" />
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Autem, sunt dignissimos explicabo tempora consectetur, quidem
+                  magni inventore aspernatur non iste itaque accusantium quo
+                  voluptatem vel facere eum illo? Ut, tempore.
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="reservas.html">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- fim do teceiro bloco -->
     </main>
 
     <!-- ########### área dos Modais ##############-->
@@ -146,6 +257,62 @@
       </div>
     </div>
 
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <h4>Suite Master</h4>
+        <img src="img/suite3.jpg" />
+      </div>
+      <div class="modal-footer">
+        <a
+          href="reservas.html"
+          class="modal-close waves-effect waves-green btn-flat"
+          >Reservar</a
+        >
+      </div>
+    </div>
+
+    <div id="modal4" class="modal">
+      <div class="modal-content">
+        <h4>Suite Double</h4>
+        <img src="img/suite4.jpg" />
+      </div>
+      <div class="modal-footer">
+        <a
+          href="reservas.html"
+          class="modal-close waves-effect waves-green btn-flat"
+          >Reservar</a
+        >
+      </div>
+    </div>
+
+    <div id="modal5" class="modal">
+      <div class="modal-content">
+        <h4>Suite Master</h4>
+        <img src="img/suite8.jpg" />
+      </div>
+      <div class="modal-footer">
+        <a
+          href="reservas.html"
+          class="modal-close waves-effect waves-green btn-flat"
+          >Reservar</a
+        >
+      </div>
+    </div>
+
+    <div id="modal6" class="modal">
+      <div class="modal-content">
+        <h4>Suite Double</h4>
+        <img src="img/suite7.jpg" />
+      </div>
+      <div class="modal-footer">
+        <a
+          href="reservas.html"
+          class="modal-close waves-effect waves-green btn-flat"
+          >Reservar</a
+        >
+      </div>
+    </div>
+
     <footer></footer>
 
     <!-- Link do jQuery -->
@@ -159,7 +326,23 @@
         $("#modal1").modal();
         $(document).ready(function () {
           $("#modal2").modal();
+          $(document).ready(function () {
+            $("#modal3").modal();
+            $(document).ready(function () {
+              $("#modal4").modal();
+              $(document).ready(function () {
+                $("#modal5").modal();
+                $(document).ready(function () {
+                  $("#modal6").modal();
+                });
+              });
+            });
+          });
         });
+      });
+
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
       });
     </script>
   </body>

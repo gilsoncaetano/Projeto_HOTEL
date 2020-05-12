@@ -1,10 +1,36 @@
 header {
   text-align: center;
 }
+.brand-logo {
+  left: 2%;
+}
+nav {
+  position: fixed;
+  margin-left: 0px;
+  top: 0px;
+
+  color: #fff;
+  position: fixed;
+  transition: background-color 0.8s ease-in-out;
+  z-index: 3;
+
+  display: block;
+}
+
 header .logo {
   width: 10%;
   height: auto;
+  margin-top: 24px;
+  padding: 10px;
 }
+
+h1 {
+  background-color: rgb(251, 252, 201);
+  font-size: 0.2rem;
+  line-height: 78%;
+  margin: 2.1rem 0 -0.2rem 0;
+}
+
 header .painel {
   width: 100%;
 }
@@ -15,4 +41,190 @@ header .painel {
 }
 .card-image img {
   cursor: pointer;
+}
+
+.texto1 {
+  margin: 3%;
+  margin-left: 3%;
+  text-align: center;
+  text-align: justify;
+  font-family: "Markazi";
+  font-size: 1.2em;
+  color: #59534c;
+}
+.tema1 {
+  text-align: center;
+}
+.btn,
+.btn-large,
+.btn-small {
+  background-color: rgb(240, 162, 16);
+  color: #fffefe;
+  letter-spacing: 2.5px;
+}
+
+h2 {
+  font-size: 2.56rem !important;
+  margin: 1%;
+}
+.dropdown-content li > a,
+.dropdown-content li > span {
+  font-size: 16px;
+  color: #f57c00;
+  display: block;
+  line-height: 22px;
+  padding: 14px 16px;
+}
+.datepicker-date-display {
+  background-color: rgb(240, 162, 16);
+}
+
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:after {
+  background-color: rgb(240, 162, 16);
+}
+.section--services {
+}
+section {
+  color: #0c0b0a;
+
+  padding: 40px 60px;
+  padding-top: 1rem;
+  /* padding-bottom: 1rem;*/
+  /* border: 3px solid rgb(47, 0, 255); */
+}
+
+.list {
+  margin: 45px;
+  padding: 45px;
+  padding-left: 0;
+  list-style-type: none;
+  /* border: 3px solid rgb(47, 0, 255); */
+}
+
+span div {
+  margin: 0px;
+  padding: 0px;
+  border: 3px solid rgb(47, 0, 255);
+}
+.darken-1 {
+  margin: 0;
+  padding: 0;
+  background-color: #efebe9 !important;
+}
+
+#icon-wifi_internet_accesses {
+  margin-left: 10%;
+  padding-right: 0px;
+}
+
+.header--main {
+  color: #f57c00;
+  text-align: center;
+  font-size: 26pt;
+  /* border: 3px solid rgb(47, 0, 255); */
+}
+
+.infos {
+  margin-left: 20%;
+  padding: 6px;
+  font-size: 12pt;
+  /* border: 3px solid rgb(47, 0, 255); */
+}
+
+.header--second {
+  margin-left: 20%;
+  padding: 10px;
+  font-size: 16pt;
+  /* border: 3px solid rgb(47, 0, 255); */
+}
+
+/* inicio do lado direito  */
+.direita {
+  /* border: 3px solid rgb(47, 0, 255); */
+  display: flex;
+  margin-right: 40%;
+}
+
+.header4 {
+  margin-left: 5%;
+  /* border: 3px solid rgb(47, 0, 255); */
+}
+/* fim do lado direito  */
+
+/* inicio do lado esquerdo  */
+.header5 {
+  margin-left: 5%;
+  margin-right: 10%;
+  /* border: 3px solid rgb(47, 0, 255); */
+}
+.esquerda {
+  margin-left: 40%;
+  display: flex;
+  /* border: 3px solid rgb(47, 0, 255); */
+}
+/* fim do lado esquerdo  */
+
+hr {
+  border-bottom: 8px rgb(8, 8, 8);
+}
+
+.contato {
+  /* margin: 0 auto; */
+  margin: 20px;
+  text-align: center;
+  font-size: 16pt;
+  /* border: 3px solid rgb(47, 0, 255); */
+}
+
+.endereco {
+  background-color: rgb(218, 218, 149);
+  margin: 0;
+  padding: 30px;
+  /* border: 3px solid rgb(47, 0, 255); */
+}
+.final {
+  width: 100%;
+}
+.services {
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+  /* border: 3px solid rgb(47, 0, 255); */
+  /* font-weight: 400px important; */
+}
+.icon--name {
+  position: relative;
+  text-align: center;
+  margin-left: 40%;
+  margin-right: 40%;
+  text-align: center;
+  border: 30px;
+  margin: 10px;
+  padding: 10px;
+  padding-left: 0;
+  /* display: inline-block; */
+  /* display: flex; */
+  /* margin: 0; */
+  /* float: left; */
+  /* padding: 5px; */
+  border: 3px solid rgb:(47, 0, 255);
+}
+.name { 
+  margin: -5px;
+  /* border: 3px solid rgb(47, 0, 255); */
+  /* display: flex; */
+  /* border: 30px; */
+  /* padding-left: 25% !important; */
+  /* list-style-type: none; */
+}
+.col .row {
+  width: 115%;
+  font-size: 14pt;
+  margin-left: 2rem;
+  margin-right: -15.75rem;
+
+  /* display: table; */
+  /* table-layout: fixed; */
+  /* text-align: center; */
 }

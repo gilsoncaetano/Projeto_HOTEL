@@ -27,8 +27,19 @@
       <!-- barra de navegação do site  -->
       <nav>
         <div class="nav-wrapper orange darken-2" style="text-align: left;">
-          <a href="index.html" class="brand-logo left">Grand Hotel</a>
+          <a href="index.html" class="brand-logo">Grand Hotel</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+            <i class="material-icons">menu</i></a
+          >
           <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="hotel.html">Hotel</a></li>
+            <li><a href="suites.html">Suites</a></li>
+            <li><a href="gastronomia.html">Gastronomia</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="localizacao.html">Localização</a></li>
+          </ul>
+
+          <ul class="sidenav" id="mobile-demo">
             <li><a href="hotel.html">Hotel</a></li>
             <li><a href="suites.html">Suites</a></li>
             <li><a href="gastronomia.html">Gastronomia</a></li>
@@ -95,7 +106,7 @@
             <div class="card">
               <div class="card-image">
                 <img src="img/lazer5.jpg" />
-                <span class="card-title">Card Title</span>
+                <span class="card-title">Hotel Luxuazo</span>
                 <a
                   href="reservas.html"
                   class="btn-floating halfway-fab waves-effect waves-light red"
@@ -128,7 +139,7 @@
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
-                <span class="card-title">Card Title</span>
+                <span class="card-title">Assita e se Encate</span>
                 <a class="btn-floating halfway-fab waves-effect waves-light red"
                   ><i class="material-icons">add</i></a
                 >
@@ -155,7 +166,16 @@
 
     <footer></footer>
 
+    <!-- Link do jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+      });
+    </script>
   </body>
 </html>
